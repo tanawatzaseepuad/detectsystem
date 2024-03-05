@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("bglit.png");
+    background-size: 100% auto;
+    background-position: center;
+    background-attachment: fixed; 
+    
+}
+.navbar {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 41, 41); 
+    color: #ffffff;
+    width: 100%;
+    height: 60px; 
+}
+.bar-logo {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 15%;
+    height: 60px; 
+    color: #00ffee;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    
+}
+.logo-image {
+    width: 120px; /* ปรับขนาดตามที่ต้องการ */
+    height: 40px; /* ปรับขนาดตามที่ต้องการ */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%; /* กำหนดให้มีมุมโค้งเป็นวงกลม */
+}
+
+.bar-all {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+.bar-all a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #ffffff;
+    padding: 1rem;
+    font-size: 19px;
+    font-weight: 500px;
+    text-decoration: none;
+}
+.bar-all a::after {
+    content: '';
+    position: absolute;
+    text-align: center;
+    margin: 35px 0 35px 0;
+    width: 80%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #00ffee;
+    bottom: -20px;
+    right: 1;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out; 
+}
+.bar-all a:hover::after {
+    transform-origin: right;
+    transform: scaleX(1);
+}
+.bar-btn {
+    /* border: 1px solid red;  */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 170px;
+    height: 60px; 
+    font-size: 19px;
+    
+}
+.bar-btn button {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    color:rgb(255, 255, 255);
+    background: #000ed800;
+    font-weight: 500px;
+    font-size: 19px;
+    margin-right: 1rem;
+    cursor:pointer;
+    
+
+}
+.bar-btn button:hover {
+    
+    border: 2px solid #00ffee;
+    background: #000ed800;
+    color: #fcfcfc;
+}
+.main {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 2%;
+}
+.main-color{
+    /* border: 1px solid red; */
+    background-color: rgba(255, 255, 255, 0);
+   
+    
+}
+.main-text{
+    /* border: 1px solid red; */
+    
+    text-align: center;
+    width: 1000px;
+    height: 250px;
+}
+.main-text h1{
+    /* border: 1px solid red; */
+    color: #00ffee;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 35px 60px 10px 60px;
+}
+.main-text p{
+    /* border: 1px solid red; */
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 100px 40px 100px;
+    font-size: 1.5rem;
+    font-family: 'Sarabun', sans-serif;
+}
+.team{
+    /* border: 1px solid red; */
+    height: 320px;
+    border-radius: 20px;
+    margin: 10px;
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center; 
+}
+.team-person{
+    /* border: 1px solid red; */
+    color: #ffffff;
+    padding-top: 20px;
+    margin: 0px 110px 20px 110px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5); 
+}   
+.team-person img{
+    /* border: 1px solid red; */
+    width: 120px;
+    height: 125px;
+    margin: 10px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+.team-contact{
+    margin-top: 20px;
+}
+.team-contact a{
+    outline: none;
+    cursor:pointer;
+    background: transparent;
+    font-weight: 400px;
+    font-size: 17px;
+    text-decoration: none;  
+    color: #000000;
+    background-color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+}
+.team-contact a:hover{
+    background: #000000;
+    color: #ffffff;
+}
+

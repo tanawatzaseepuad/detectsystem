@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("detection4.png");
+    background-size: 100% auto;
+    background-position: center;
+    background-attachment: fixed; 
+}
+.navbar {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292929; 
+    color: #ffffff;
+    width: 100%;
+    height: 60px; 
+}
+.bar-logo {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 15%;
+    
+    height: 60px; 
+    color: #00ffee;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+}
+.logo-image {
+    width: 120px; /* ปรับขนาดตามที่ต้องการ */
+    height: 40px; /* ปรับขนาดตามที่ต้องการ */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%; /* กำหนดให้มีมุมโค้งเป็นวงกลม */
+}
+.bar-all {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+.bar-all a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #ffffff;
+    padding: 1rem;
+    font-size: 19px;
+    font-weight: 500px;
+    text-decoration: none;
+}
+.bar-all a::after {
+    content: '';
+    position: absolute;
+    text-align: center;
+    margin: 35px 0 35px 0;
+    width: 80%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #00ffee;
+    bottom: -20px;
+    right: 1;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out; 
+}
+.bar-all a:hover::after {
+    transform-origin: right;
+    transform: scaleX(1);
+}
+.bar-btn {
+    /* border: 1px solid red;  */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 170px;
+    height: 60px; 
+    font-size: 19px;
+    
+}
+.bar-btn button {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    color:rgb(255, 255, 255);
+    background: #000ed800;
+    font-weight: 500px;
+    font-size: 19px;
+    margin-right: 1rem;
+    cursor:pointer;
+    
+
+}
+.bar-btn button:hover {
+    
+    border: 2px solid #00ffee;
+    background: #000ed800;
+    color: #fcfcfc;
+}
+.main {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 2%;
+}
+.main-color{
+    /* border: 1px solid red; */
+    background-color: rgba(255, 255, 255, 0);
+   
+    
+}
+.main-text{
+    /* border: 1px solid red; */
+    
+    text-align: right;
+    width: 800px;
+    height: 250px;
+}
+.main-text h1{
+    /* border: 1px solid red; */
+    color: #00ffee;
+    text-align: left;
+    font-size: 2.5rem;
+    margin: 35px 60px 10px 60px;
+}
+.main-text p{
+    /* border: 1px solid red; */
+    color: #ffffff;
+    text-align: left;
+    margin: 20px 100px 40px 100px;
+    font-size: 1.8rem;
+    font-family: 'Sarabun', sans-serif;
+}
+.team{
+    /* border: 1px solid red; */
+    height: 320px;
+    border-radius: 20px;
+    margin: 10px;
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center; 
+}
+.team-person{
+    /* border: 1px solid red; */
+    color: #ffffff;
+    padding-top: 20px;
+    margin: 0px 110px 20px 110px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5); 
+}   
+.team-person img{
+    /* border: 1px solid red; */
+    width: 120px;
+    height: 125px;
+    margin: 10px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+.team-contact{
+    margin-top: 20px;
+}
+.team-contact a{
+    outline: none;
+    cursor:pointer;
+    background: transparent;
+    font-weight: 400px;
+    font-size: 17px;
+    text-decoration: none;  
+    color: #000000;
+    background-color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+}
+.team-contact a:hover{
+    background: #000000;
+    color: #ffffff;
+}
+/* Add this style to center the login form */
+.main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; /* Adjust the margin as needed */
+}
+
+.main-box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; /* Adjust the margin as needed */
+}
+
+
+/* Add this style to center the form within the container */
+form {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #000000;/* Add border to the form */
+    padding: 20px; /* Add padding for better aesthetics */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    width: 30vw; /* Set a specific width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #ffffff42;  /* Set white background */
+    color: #ffffff;
+}
+
+
+label {
+    font-size: 18px;
+    color: #000000; /* สีของตัวหนังสือ */
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #232323;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 10%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #00ffee; /* เปลี่ยนสีเวลา hover */
+    color: #000000;
+}
+
+
+/* Add this style to center the Google login button */
+.container4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* Add this style to center the user info (if logged in) */
+.container img,
+.container p {
+    margin: 10px; /* Adjust the margin as needed */
+}
+
+/* Add this style to center the logout button */
+.container a {
+    display: block;
+    margin-top: 10px; /* Adjust the margin as needed */
+    text-align: center;
+}
+/* Add this style for the Google login button */
+.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 2px solid #00ffee;
+    background-color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.google-login:hover {
+    background-color: #00ffee;
+    color: #fff;
+}
+
+/* Add this style for the Google icon */
+.google-login i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+.user-email {
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.netflix-button {
+    background-color: #fff; /* Netflix red color */
+    color: #000000; /* White text color */
+    
+    padding: 10px 20px; /* Padding for the button */
+    border: 2px solid #00ffee;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Add pointer cursor on hover */
+    margin-top: 10px; /* Add top margin to the button */
+}
+.netflix-button2 {
+    font-family: 'Graphique Pro', sans-serif;
+    background-color: #222222cf; /* Set button background color */
+    color: #ffffff;  /* White text color */
+    
+    padding: 80px 120px; /* Padding for the button */
+    transition: background-color 0.3s ease; 
+    border-radius: 30px; /* Add border-radius for rounded corners */
+    font-size: 34px; /* Font size */
+    cursor: pointer; /* Add pointer cursor on hover */
+    margin-top: 10px; /* Add top margin to the button */
+}
+.netflix-button2:hover {
+    background-color: #00ffeecb;
+    color: #000000;
+}
+.netflix-button3:hover {
+    background-color: #00ffeecb;
+    color: #000000;
+}
+.netflix-button3 {
+    font-family: 'Graphique Pro', sans-serif;
+    background-color: #222222cf; /* Set button background color */
+    color: #ffffff;  /* White text color */
+    
+    padding: 80px 120px; /* Padding for the button */
+    transition: background-color 0.3s ease; 
+    border-radius: 30px; /* Add border-radius for rounded corners */
+    font-size: 34px; /* Font size */
+    cursor: pointer; /* Add pointer cursor on hover */
+    margin-top: 10px; 
+}
+.netflix-button4 {
+    font-family: 'Graphique Pro', sans-serif;
+    background: #282828; /* Netflix red color */
+    color: #ffffff;  /* White text color */
+    
+    padding: 150px 150px; /* Padding for the button */
+    border: 5px solid #ffffff;
+    border-radius: 30px; /* Add border-radius for rounded corners */
+    font-size: 54px; /* Font size */
+    cursor: pointer; /* Add pointer cursor on hover */
+    margin-top: 10px; /* Add top margin to the button */
+}
+.netflix-button4:hover {
+    background-color: #282828; /* Darker red on hover */
+    border: 5px solid #00ffee;
+}
+.netflix-button5:hover {
+    background-color: #282828; /* Darker red on hover */
+    border: 5px solid rgb(0, 255, 238);
+}
+.netflix-button5 {
+    font-family: 'Graphique Pro', sans-serif;
+    background: #282828; /* Netflix red color */
+    color: #ffffff; /* White text color */
+    
+    padding: 100px 100px; /* Padding for the button */
+    border: 5px solid #ffffff;
+    border-radius: 30px; /* Add border-radius for rounded corners */
+    font-size: 54px; /* Font size */
+    cursor: pointer; /* Add pointer cursor on hover */
+    margin-top: 10px; /* Add top margin to the button */
+    
+}
+
+.button-spacing {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+.netflix-button4 {
+    background-color: #ffffff; /* Netflix red color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: 2px solid #00596b;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Add pointer cursor on hover */
+    margin-top: 10px; /* Add top margin to the button */
+}
+
+.netflix-button4:hover {
+    background-color: #1a1a1a; /* Darker red on hover */
+    border: 2px solid #00596b;
+    color: #ffffff;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video-frame {
+    border: 2px solid #00596b; /* Disney+ orange color */
+    background-color: #1a1a1a; /* Background color */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-frame {
+ border: 2px solid #00596b;
+ color: #ffffff; /* Disney+ orange color */
+    background-color: #1a1a1a; /* Background color */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Add this style for the images */
+.image-frame img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    width: 100%; /* Set the width to 100% to fill the container */
+    max-height: 200px; /* Set the maximum height of the image */
+    object-fit: cover; /* Crop the image to cover the container */
+}
+.video-info {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.filename, .timestamp {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.filename {
+    width: 50%;
+}
+.video-container {
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling for smaller screens */
+}
+
+table {
+    border-collapse: collapse;
+    width: 80vw;
+   
+    margin-top: 20px;
+    box-shadow: 0 4px 8px #222222; /* Box shadow similar to Disney+ */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+ 
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #222222;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.view-video {
+    background-color: #222222; /* Pink color similar to Disney+ */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-video:hover {
+    background-color: #222222; /* Darker pink color on hover */
+}
+.view-image {
+    background-color: #222222; /* Pink color similar to Disney+ */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-image:hover {
+    background-color: #222222; /* Darker pink color on hover */
+}
+.chart-container {
+    margin-bottom: 100px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+}
